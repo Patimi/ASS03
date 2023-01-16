@@ -18,6 +18,7 @@
   }
 }
 
+  /* Only Tablet */
 @media only screen and (min-width: 501px) and (max-width: 820px) {
   /* Project */
   #project .lists {
