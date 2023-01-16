@@ -1,0 +1,339 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  word-spacing: 2px;
+  line-height: 1.5;
+}
+.bg-grey {
+  background: #f7f7f7;
+}
+.bg-grey--1 {
+  background: #5e4f4f2d;
+}
+.bg-grey--2 {
+  background: #868e96;
+}
+.bg-blue {
+  background-color: #199cdb;
+}
+
+/* section > .container {
+  width: 1170px;
+  margin: auto;
+  display: block;
+
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 70px;
+  padding-bottom: 30px;
+} */
+.section-title {
+  margin-bottom: 40px;
+}
+ul {
+  margin-top: 12px;
+  margin-bottom: 24px;
+  list-style: none;
+}
+#job-info li::before,
+#certificate li::before {
+  content: " - ";
+  margin-right: 10px;
+}
+.icon-color {
+  color: #199cdb;
+  /* margin-top: 24px; */
+}
+.year {
+  display: inline-block;
+  background-color: #199cdb;
+  padding: 4px 16px;
+  border-radius: 10px;
+  color: #fff;
+}
+/*BANNER ========= */
+#banner {
+  /* background-image for banner*/
+  padding: 200px 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.314), rgba(0, 0, 0, 0.439)),
+    url(../images/banner.jpg);
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  height: auto;
+
+  position: relative;
+}
+#banner .text {
+  color: #fff;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+#banner span {
+  font-weight: lighter;
+  opacity: 0.7;
+}
+/* NAVBAR =========*/
+/* #nav-bar .container {
+  text-align: center;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 300px;
+
+  position: relative;
+} */
+.nav {
+  justify-content: center;
+}
+#nav-bar a {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+}
+.container-icon {
+  display: inline-block;
+  width: 160px;
+  padding: 22px 12px;
+
+  border-left: 1px solid #dee2e6;
+  /* border-right: 1px solid rgba(0, 0, 0, 0.4); */
+}
+
+.img-nav {
+  border-radius: 50%;
+  border: 8px solid #fff;
+
+  width: 150px;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  /* uu tien hien thi doi vs cac element đã được position */
+}
+.nav-item {
+  border-left: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6;
+}
+/*ABOUT - MUCTIEU- THONG TIN CA NHAN  */
+/* #about .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 126px;
+}
+
+#target {
+  margin-left: 24px;
+} */
+
+#about {
+  position: relative;
+}
+/* background-color for personal-info */
+/* #personal-info::before,
+#personal-info::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background-color: #5e4f4f2d;
+} */
+#about::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background-color: #5e4f4f2d;
+}
+#personal-info li > span {
+  font-weight: bolder;
+}
+
+/* JOB-INFO =========*/
+#job-info .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  column-gap: 30px;
+  row-gap: 40px;
+}
+#job-info .container > * {
+  border: 1px solid rgba(42, 37, 37, 0.353);
+  padding-top: 70px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 26px;
+}
+
+#job-info .container .header {
+  display: grid;
+  /* ti le 75%__25% */
+  grid-template-columns: 3fr 1fr;
+  justify-content: center;
+  align-items: center;
+
+  padding-bottom: 48px;
+}
+#job-info .header > i {
+  font-size: 36px;
+}
+/* "experience", "education", "activity"  */
+.job-info--item {
+  position: relative;
+  margin-bottom: 36px;
+  margin-left: 26px;
+}
+.job-info--item::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -18px;
+
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #199cdb;
+}
+/* hobbie */
+.hobbie .content-info {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.hobbie-icon {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  font-size: 30px;
+}
+.hobbie-icon > *::before {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #199cdb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hobbie .content-text {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 10px;
+  font-size: 12px;
+}
+/*  languge  && skill */
+
+.content-info span {
+  display: inline-block;
+  width: 45px;
+  height: 2px;
+  margin-right: 10px;
+  margin-bottom: 12px;
+}
+/* CERTIFICATION =========*/
+#certificate .row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#certificate .row:not(:last-of-type) {
+  border-bottom: 1px solid #d6c08d;
+}
+
+.cerf-item {
+  display: flex;
+  gap: 30px;
+  margin: 30px 0px;
+}
+#certificate img {
+  width: 150px;
+  height: auto;
+}
+
+.cerf-item:nth-child(even) {
+  border-left: 1px solid #d6c08d;
+  padding-left: 30px;
+}
+/* PROJECT =========*/
+#project .lists {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+
+  grid-auto-columns: 1fr;
+}
+#project .pro-item {
+  display: flex;
+  flex-direction: column;
+}
+#project img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+#project .title,
+.sub {
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+#project .title {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#project .sub {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-right: 50px;
+}
+#project .year {
+  border-radius: 20px;
+}
+table {
+  /* height: 350px; */
+  height: 100%;
+  border-collapse: collapse;
+}
+table tr {
+  border: 1px solid #ccc;
+}
+table td {
+  padding: 10px;
+  vertical-align: top;
+  text-align: left;
+}
+td p {
+  margin: 0;
+}
+/* Ngăn xuống hàng cho : "Mô tả", "Nhiệm vụ" && "Công nghệ" */
+tr td:first-child {
+  white-space: nowrap;
+}
+/* FOOTER ========= */
+#footer .container {
+  padding-top: 30px;
+  text-align: center;
+}
+#footer li {
+  display: inline-block;
+  font-size: larger;
+  margin-right: 30px;
+}
+.icon-big {
+  font-size: 3.7vw;
+}

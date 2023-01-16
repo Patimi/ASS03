@@ -1,0 +1,41 @@
+/* @media only screen and (min-width: 601px) and (max-width: 768px) */
+@media only screen and (max-width: 820px) {
+  /* Navbar */
+  .img-nav {
+    display: none;
+  }
+  /* Job-info */
+  #job-info .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* Certification */
+  .cerf-item {
+    flex-direction: column;
+  }
+  #certificate img {
+    /* width: 230px; */
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 820px) {
+  /* Project */
+  #project .lists {
+    gap: 10px;
+    font-size: 12px;
+  }
+
+  #project .title,
+  #project .sub {
+    padding: 10px;
+  }
+  #project .sub {
+    gap: 4px;
+  }
+  /* .year {
+  padding: 2px 8px;
+} */
+  table td {
+    padding: 4px;
+  }
+}
